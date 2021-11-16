@@ -1,0 +1,17 @@
+{
+  "baseUrl": "https://www.pyszne.pl/en/menu/test-restaurant-selenium?showTestRestaurants",
+  "pageLoadTimeout": 180000,
+  "chromeWebSecurity": false,
+  "failOnStatusCode": false,
+  "reporter": "cypress-multi-reporters",
+  "reporterOptions": {
+      "reporterEnabled": "mochawesome",
+      "mochawesomeReporterOptions": {
+          "reportDir": "cypress/reports/mocha",
+          "quite": true,
+          "overwrite": false,
+          "html": true,
+          "json": true
+      }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "address_main":"Dłusko 12, 78-630 Dłusko",
+  "comment":"no sugar",
+  "address" : {
+    "streetName" : "Dłusko",
+    "houseNumber": "12",
+    "postCode" : "78-630",
+    "city": "Dłusko",
+    "flatNumber": "12", 
+    "floor": "1", 
+    "accessCode": "123",
+    "companyName": "test" ,
+    "addNote" : "Please don't ring the bell."
+},
+"personalDetails" : {
+    "name" : "Awais",
+    "email" : "test@123.com",
+    "phoneNumber": "123456789"
+  },
+  "confirmationText" : "/foodtracker?trackingid"
+}

@@ -1,0 +1,39 @@
+{
+    "meals": "[data-qa='item-element']",
+    "address_field": "[data-qa='location-panel-search-input-address-element-error']",
+    "confirmAddress": "[data-qa='text']",
+    "addToBasket" : "[data-qa='item-choices-action-submit']",
+    "addNote": "[data-qa='cart-item-action-add-comment']",
+    "commentField1" : "#textarea_0",
+    "addCommentBtn": "[data-qa='cart-item-comment-action-add']",
+    "checkoutBtn" : "[data-qa='sidebar-action-checkout']",
+    "address" : {
+        "streetName" : "[data-qa='delivery-address-form-input-street-name-element']",
+        "houseNumber": "[data-qa='delivery-address-form-input-street-number-element']",
+        "postCode" : "[data-qa='delivery-address-form-input-postal-element']",
+        "city": "[data-qa='delivery-address-form-input-city-element']",
+        "flatNumber": "[data-qa='delivery-address-form-input-flat-element']", 
+        "floor": "[data-qa='delivery-address-form-input-floor-element']", 
+        "accessCode": "[data-qa='delivery-address-form-input-access-code-element']",
+        "companyName": "[data-qa='delivery-address-form-input-company-name-element']" ,
+        "addNote" : "[data-qa='shipping-info-forms-delivery-details-input-remarks-element']"
+    },
+    "personalDetails" : {
+        "name" : "[data-qa='shipping-info-forms-personal-details-input-name-element']",
+        "email" : "[data-qa='shipping-info-forms-personal-details-input-email-element']",
+        "phoneNumber": "[data-qa='shipping-info-forms-personal-details-input-phone-element']"
+    },
+    "paymentMethod": {
+        "choose": "[data-qa='multi-step-checkout-details-payment-element-element']",
+        "paypal": "[data-qa='payment-modal-paypal-element-element']",
+        "cash":"[data-qa='payment-modal-cash-element-element-element']",
+        "cancelPaypal": "#cancelLink",
+        "confirmSelection": "[data-qa='payment-modal-action-submit']",
+        "confirmOrder": "[data-qa='multi-step-checkout-action-submit-order']",
+        "sidebarPaymentSelection": "[data-qa='sidebar-overview-details-payment-element-element']",
+        "sidebarConfirmOrder": "[data-qa='proceed-checkout-button-action-submit-order']"
+        
+    },
+    "confirmationHeader": ".css-c1ispf"        
+
+}

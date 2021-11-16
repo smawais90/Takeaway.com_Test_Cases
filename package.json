@@ -1,0 +1,40 @@
+{
+    "name": "takeaway.com_test_cases",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "clean:reports": "rm -R -f cypress/reports && mkdir cypress/reports && mkdir cypress/reports/mochareports",
+        "pretest": "npm run clean:reports",
+        "scripts": "cypress run",
+        "combine-reports": "mochawesome-merge cypress/reports/mocha/*.json > cypress/reports/mochareports/report.json",
+        "generate-report": "marge cypress/reports/mochareports/report.json -f report -o cypress/reports/mochareports",
+        "posttest": "npm run combine-reports && npm run generate-report",
+        "test": "npm run pretest && npm run scripts || npm run posttest",
+        "codeceptjs": "codeceptjs run --steps",
+        "codeceptjs:headless": "HEADLESS=true codeceptjs run --steps",
+        "codeceptjs:ui": "codecept-ui --app",
+        "codeceptjs:demo": "codeceptjs run --steps -c node_modules/@codeceptjs/examples",
+        "codeceptjs:demo:headless": "HEADLESS=true codeceptjs run --steps -c node_modules/@codeceptjs/examples",
+        "codeceptjs:demo:ui": "codecept-ui --app  -c node_modules/@codeceptjs/examples"
+    },
+    "author": "Syed Muhammad Awais",
+    "license": "ISC",
+    "devDependencies": {
+        "@codeceptjs/configure": "^0.7.0",
+        "@codeceptjs/examples": "^1.2.1",
+        "@codeceptjs/ui": "^0.4.6",
+        "codeceptjs": "^3.2.1",
+        "cypress": "^9.0.0",
+        "cypress-file-upload": "^5.0.8",
+        "cypress-multi-reporters": "^1.4.0",
+        "cypress-xpath": "^1.6.2",
+        "day": "^0.0.2",
+        "mocha": "^9.0.2",
+        "mochawesome": "^6.2.2",
+        "mochawesome-merge": "^4.2.0",
+        "mochawesome-report-generator": "^5.2.0",
+        "moment": "^2.29.1",
+        "playwright": "^1.16.3"
+    }
+}
